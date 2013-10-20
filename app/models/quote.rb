@@ -9,7 +9,7 @@ class Quote
   ]
 
   def self.fetch(params)
-    car_age = params[:car_year].to_i - Date.today.year
+    car_age = Date.today.year - params[:car_year].to_i
     person_age = params[:age].to_i
     gender = params[:gender]
     @quotes.select do |q|
