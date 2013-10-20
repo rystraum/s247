@@ -1,0 +1,70 @@
+<%= form_tag get_quotation_path, class: "form form-horizontal", role: "form" do %>
+  <div class="form-group">
+    <label for="car_plate_number" class="col-lg-2 control-label">Plate Number:</label>
+    <div class="col-lg-10">
+      <input type="text" name="car_plate_number" class="form-control" id="car_plate_number" placeholder="e.g. ABC 213">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="car_year" class="col-lg-2 control-label">Year:</label>
+    <div class="col-lg-10">
+      <input type="text" name="car_year" class="form-control" id="car_year" placeholder="e.g. 2004">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="car_make" class="col-lg-2 control-label">Make:</label>
+    <div class="col-lg-10">
+      <input type="text" name="car_make" class="form-control" id="car_make" placeholder="e.g. Toyota">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="car_model" class="col-lg-2 control-label">Model:</label>
+    <div class="col-lg-10">
+      <input type="text" name="car_model" class="form-control" id="car_model" placeholder="e.g. Innova">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        Transmission:
+        <label><input type="radio" name="car_transmission" value="M"> Manual</label>
+        <label><input type="radio" name="car_transmission" value="A"> Automatic</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      <input type="text" name="name" class="form-control" id="name" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Email</label>
+    <div class="col-lg-10">
+      <input type="text" name="email" class="form-control" id="email" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="age" class="col-lg-2 control-label">Age</label>
+    <div class="col-lg-10">
+      <input type="text" age="age" class="form-control" id="age" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        Gender:
+        <label><input type="radio" name="gender" value="M"> Male</label>
+        <label><input type="radio" name="gender" value="F"> Female</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+<% end %>

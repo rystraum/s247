@@ -1,0 +1,32 @@
+<div class="jumbotron">
+  <p>Thanks for submitting your information!</p>
+</div>
+
+<% if @quotation.blank? %>
+  <div>
+    <p>We don't have an available offer for you right now, though.</p>
+    <p>Don't fret! We're studying how we can give you the best deal and you'll hear from us shortly. :)</p>
+  </div>
+<% else %>
+  <table class="table">
+    <caption>Great news! You are eligible for the following insurance:</caption>
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Name</th>
+        <th>Coverage</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <% @quotation.each do |quote| %>
+          <td><%= quote[:company] %></td>
+          <td><%= quote[:name] %></td> 
+          <td><%= number_to_currency quote[:value] %></li>
+          <td><%= link_to "Details", "#" %></td>
+        <% end %>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
