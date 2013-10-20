@@ -1,0 +1,72 @@
+<%= form_tag get_quotation_path, class: "form form-horizontal", role: "form" do %>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        I smoke:
+        <label><input type="radio" name="medical_smoke" value="M"> Never</label>
+        <label><input type="radio" name="medical_smoke" value="A"> Once a month</label>
+        <label><input type="radio" name="medical_smoke" value="A"> Once a week</label>
+        <label><input type="radio" name="medical_smoke" value="A"> Once a day</label>
+        <label><input type="radio" name="medical_smoke" value="A"> Constantly</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        I drink:
+        <label><input type="radio" name="medical_drink" value="M"> Never</label>
+        <label><input type="radio" name="medical_drink" value="A"> Once a month</label>
+        <label><input type="radio" name="medical_drink" value="A"> Once a week</label>
+        <label><input type="radio" name="medical_drink" value="A"> Once a day</label>
+        <label><input type="radio" name="medical_drink" value="A"> Constantly</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        I have had a medical operation:
+        <label><input type="radio" name="medical_operation" value="M"> Never</label>
+        <label><input type="radio" name="medical_operation" value="A"> Sometimes</label>
+        <label><input type="radio" name="medical_operation" value="A"> Constantly</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      <input type="text" name="name" class="form-control" id="name" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Email</label>
+    <div class="col-lg-10">
+      <input type="text" name="email" class="form-control" id="email" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="age" class="col-lg-2 control-label">Age</label>
+    <div class="col-lg-10">
+      <input type="text" age="age" class="form-control" id="age" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <div class="checkbox">
+        Gender:
+        <label><input type="radio" name="gender" value="M"> Male</label>
+        <label><input type="radio" name="gender" value="F"> Female</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+<% end %>
