@@ -19,4 +19,5 @@ development:
   encoding: unicode
   database: myapp_development
   pool: 5
-  password:
+  user: postgres
+  password: pass.1

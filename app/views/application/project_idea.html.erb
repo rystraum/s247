@@ -1,0 +1,26 @@
+<%= form_tag approver_path, class: "form form-horizontal", role: "form", method: :get do %>
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Description</label>
+    <div class="col-lg-10">
+      <textarea name="description" style="width: 100%;" rows="10"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Mandate</label>
+    <div class="col-lg-10">
+      <select id="core_team_options">
+        <option value=""></option>
+        <option value="john">E-government</option>
+        <option value="francis">Government Transparency</option>
+        <option value="matthew">PDAF expansion</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+<% end %>

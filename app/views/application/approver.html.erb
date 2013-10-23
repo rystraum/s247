@@ -1,0 +1,31 @@
+<h1>Approver view</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Project brief</th>
+      <th>Submitter</th>
+      <th>Mandate</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Awesome project idea</td>
+      <td>Rystraum F. Gamonez</td>
+      <td><%= link_to "E-government", mandates_path %></td>
+      <td>
+        <%= link_to "Approve", approved_idea_path, class: "btn btn-success" %>
+        <%= link_to "Deny", "#", class: "btn btn-info" %>
+      </td>
+    </tr>
+    <tr>
+      <td>Awesome project idea #1</td>
+      <td>Rystraum F. Gamonez</td>
+      <td><%= link_to "E-government", mandates_path %></td>
+      <td>
+        <%= link_to "Approve", approved_idea_path, class: "btn btn-success" %>
+        <%= link_to "Deny", "#", class: "btn btn-info" %>
+      </td>
+    </tr>
+  </tbody>
+</table>

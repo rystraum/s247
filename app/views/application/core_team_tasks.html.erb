@@ -1,0 +1,36 @@
+<h1>Toyota's activities</h1>
+<ul>
+  <li>Submitted Problem Tree Analysis - <%= link_to "Download document", "#" %></li>
+</ul>
+
+<hr>
+
+<%= form_tag approver_path, class: "form form-horizontal", role: "form", method: :get do %>
+  <h2>Submit report</h2>
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      <input type="text" name="email" class="form-control" id="email" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Summary</label>
+    <div class="col-lg-10">
+      <textarea name="description" style="width: 100%;" rows="10"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="col-lg-2 control-label">Attachment</label>
+    <div class="col-lg-10">
+      <input type="file" name="email" class="form-control" id="email" placeholder="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+<% end %>

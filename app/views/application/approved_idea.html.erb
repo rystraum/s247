@@ -1,0 +1,17 @@
+<h1>Awesome Idea #1</h1>
+<p>by Rystraum F. Gamonez</p>
+<p>sponsored by Deng Silorio</p>
+
+<h2>Core team members</h2>
+<ul id="core_team">
+  <li><%= link_to "Toyota - Do needs/stakeholder analysis", core_team_tasks_path %></li>
+</ul>
+<select id="core_team_options" style="width: 200px;">
+  <option value=""></option>
+  <option value="john">John</option>
+  <option value="francis">Francis</option>
+  <option value="matthew">Matthew</option>
+  <option value="thomas">Thomas</option>
+</select>
+<input type="text" name="core_team_task" value="" placeholder="" id="core_team_task" >
+<%= link_to "Add to core team", "#", id: "add_core_team" %>

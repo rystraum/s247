@@ -16,6 +16,25 @@ class ApplicationController < ActionController::Base
     @quotation = Quote.fetch(permitted_params)
   end
 
+  def project_idea
+  end
+
+  def approver
+    
+  end
+
+  def mandates
+    
+  end
+
+  def approved_idea
+    
+  end
+
+  def core_team_tasks
+    
+  end
+
   def permitted_params
     params.permit(:car_year, :car_plate_number, :car_make, :car_model, :car_transmission, :name, :email, :age, :gender)
   end
