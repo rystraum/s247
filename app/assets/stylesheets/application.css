@@ -10,6 +10,18 @@
  *
  *= require bootstrap
  *= require bootstrap-theme
+ *= require chosen
  *= require_self
  *= require_tree .
  */
+
+form {
+  color: black;
+}
+
+form input,
+form textarea,
+form button {
+  color: black;
+  border: 1px solid black !important;
+}

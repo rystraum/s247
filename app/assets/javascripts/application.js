@@ -14,4 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require chosen
 //= require_tree .
+
+function add_core_team(event) {
+  text = $("#core_team_options option:selected").text();
+  task = $("#core_team_task").val();
+  text = text + " - " + task;
+  $("#core_team").append('<li>' + text + '</li>');
+  event.preventDefault();
+}
+
+$(document).ready(function(){
+  $("#add_core_team").click(add_core_team);
+  $("select").chosen({allow_single_deselect: true});
+});
